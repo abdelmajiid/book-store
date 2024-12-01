@@ -1,0 +1,18 @@
+.card{
+    border: black solid 2px;
+    border-radius: 20px;
+    margin: 30px;
+}
+.card img{
+    width: 200px;       /* Set the width of the image */
+    height: 250px;      /* Set the height of the image */
+    object-fit: fill;
+    border: 1px red solid;
+}
+.title{
+    text-align: center;
+    margin: 0 10%;
+}
+span{
+    text-align: end;
+}
