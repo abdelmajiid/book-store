@@ -1,0 +1,21 @@
+name: Example Workflow
+
+# Define when this workflow should run
+on:
+  push:
+    branches:
+      - main  # Run when code is pushed to the 'main' branch
+
+jobs:
+  example-job:
+    # Define the environment for this job
+    runs-on: ubuntu-latest  # Use a virtual machine with Ubuntu
+
+    steps:
+      # Step 1: Check out your repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Use the secret securely
+      - name: Use the API key
+        run: echo "Your API key is: ${{ secrets.GOOGLEBOOKS_API_KEY }}"
