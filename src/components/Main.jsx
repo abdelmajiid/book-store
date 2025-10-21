@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 function Main(){
     const [books, setBooks] = useState([]) 
     
-    const API_KEY = "AIzaSyA3ye6qhNGsix8gjY_bjOqLvBdixXFV70U"
+    const API_KEY = process.env.REACT_APP_API_KEY;
     const API_URL = `https://www.googleapis.com/books/v1/volumes?key=${API_KEY}`
     // const [search, setSearch] = useState("")
     const searchBooks = async(title) => {
