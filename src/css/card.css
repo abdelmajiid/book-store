@@ -1,8 +1,19 @@
+
 .card{
-    border: black solid 2px;
-    border-radius: 20px;
-    margin: 30px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+    border-radius:var(--radius);
+    overflow:clip;
+    box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+    transition: transform .45s cubic-bezier(.2,.9,.3,1), box-shadow .35s;
+    transform-origin: center;
+    backdrop-filter: blur(8px) saturate(120%);
+    border: 1px solid rgba(255,255,255,0.04);
 }
+.card:focus-within,
+  .card:hover{
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(12,10,40,0.6);
+  }
 .card img{
     width: 200px;       /* Set the width of the image */
     height: 250px;      /* Set the height of the image */

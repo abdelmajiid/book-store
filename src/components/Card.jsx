@@ -13,6 +13,7 @@ const Card= ({ book })=>{
                     ( <span>uknown Year</span> ) 
                 } 
             </span>
+            <br />
              {book.volumeInfo.imageLinks
                 ?
                 (<img src={book.volumeInfo.imageLinks.smallThumbnail} alt="nothing" />)

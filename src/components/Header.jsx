@@ -22,9 +22,10 @@ const Header = ({ sendDataToParent })=>{
             <nav>
                 <h1>FARAH BOOK STORE</h1>                
             </nav>
-            <div>
+            <div className="search-box">
                 <input
-                    placeholder="Enter your book's name"
+                    type="text"
+                    placeholder="Find Your Next Book"
                     value={searchTerm} 
                     onChange={(e)=>setSearchTerm(e.target.value)}
                     onKeyDown={handleKeyPress}
